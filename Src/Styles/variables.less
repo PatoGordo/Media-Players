@@ -1,5 +1,3 @@
-@bgcolor: #35495e;
-
 .romove-user-select{
 	user-select: none;
 	-webkit-touch-callout: none;
@@ -9,9 +7,30 @@
 	-ms-user-select: none;
 	-webkit-tap-highlight-color: transparent;
 }
-.flex-coll-center-center{
+.flex-col-center-center{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+}
+.flex-col-center-justcenter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.flex-row-center-justcenter-nwrap{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+.center-cover-norepeat{
+	background-position: center center;
+	background-repeat: no-repeat; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }

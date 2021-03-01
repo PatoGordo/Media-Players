@@ -3,6 +3,12 @@
 @import url('Components/home.less');
 @import url('variables.less');
 
+// Themes
+@import url('Components/themes/default.less');
+@import url('Components/themes/dark.less');
+
+// Players Styles
+@import url('Components/audioPlayer.less');
 
 /* Preset */
 *{
@@ -24,8 +30,10 @@ body{
 }
 .component{
 	width: 100%;
-	height: 100%;
-	.flex-coll-center-center()
+	height: 100vh;
+	overflow-y: auto;
+	margin-bottom: 80px;
+	.flex-col-center-center()
 }
 button, a, input, label{
 	.romove-user-select()
@@ -35,7 +43,4 @@ textarea {
 }
 h1, h2{
 	font-weight: 400;
-}
-h2{
-	margin-right: auto;
 }

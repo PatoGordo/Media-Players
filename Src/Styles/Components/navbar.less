@@ -1,24 +1,29 @@
 .navbar{
+	bottom: 0;
+	position: fixed;
+	width: 100%;
 	height: 80px;
-	padding: 0 60px 0 60px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-items: center;
-	background: @bgcolor;
+	justify-content: space-evenly;
 	@media screen and (max-width: 960px){
 		padding: 0;
 	}
 }
 .navbar-item{
 	margin: 20px;
-	color: #42b883;
+	color: #6fcca2;
 	padding: 10px;
+	font-size: 1.6rem;
+	transition: all ease .3s;
+	&:hover{
+		color: #42b883;
+		transition: all ease .3s;
+	}
 	@media screen and (max-width: 960px){
 		margin: 10px;
-	}
-	&:hover{
-		border-bottom: 1px solid rgba(66, 184, 131, .8);
 	}
 }
 .navbar-item.title{
